@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Hacking Course</title>
+    <style>
+        /* Styling the image */
+        img {
+            width: 100%;
+            max-width: 600px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Click on the image below to access the Ethical Hacking course materials, including the question paper and answer key.</h2>
+    
+    <!-- Image to be clicked for redirection -->
+    <img src="four.jpg" alt="Course Materials" id="image" onclick="redirectToFiles()">
+
+    <script>
+        // Function to redirect to the files when image is clicked
+        function redirectToFiles() {
+            // Replace these URLs with the actual PDF file links
+            const questionPaperURL = "https://drive.google.com/file/d/1hsBfA4XH36O0JnKw8Wfa_eh1zOx2fly_/view?usp=drive_link";
+            const answerKeyURL = "https://drive.google.com/file/d/1TGRWTWdwVQigcX1PGaxfWlW0i9y2_ADU/view?usp=drive_link";
+            
+            // Prompt user to choose between the question paper or answer key
+            const choice = confirm("Click OK to download the Question Paper or Cancel for the Answer Key.");
+            if (choice) {
+                window.location.href = questionPaperURL;
+            } else {
+                window.location.href = answerKeyURL;
+            }
+        }
+    </script>
+
+</body>
+</html>
